@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans">
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script type="text/javascript" src="menu.js"></script>
+	<link rel="stylesheet" type="text/css" href="menu.css">
+</head>
+<body>
+	<div style="width: 100% ;height: 100px;background-color: #1a1a1a;position: absolute;z-index: 1002">
+		<a href=""><img src="./imagenes/logo.png" style="background-color: white;margin:15px" align="left"></a>
+		<a href=""><p style="float: left;margin: 10px;font-size: 25px;padding-top: 15px;color: white;margin-left: 100px">Mantenimiento</p></a>
+		<a href=""><p style="float: left;margin: 10px;font-size: 25px;padding-top: 15px;color: white;margin-left: 100px">Mantenimiento</p></a>
+		<a href=""><p style="float: left;margin: 10px;font-size: 25px;padding-top: 15px;color: white;margin-left: 100px">Mantenimiento</p></a>
+		<a href=""><p style="float: left;margin: 10px;font-size: 25px;padding-top: 15px;color: white;margin-left: 100px">Mantenimiento</p></a>
+	</div>
+	
+    <div id="wrapper">
+        <div class="overlay"></div>
+    
+        <!-- Sidebar -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper2" role="navigation">
+        </nav>
+        <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+            <ul class="nav sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                       Menú
+                    </a>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Persona<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li class="dropdown-header">Sub Menú</li>
+                    <li><a href="#">Ubigeo</a></li>
+                    <li><a href="#">Persona</a></li>
+                    <li><a href="#">Propietario</a></li>
+                    <li><a href="#">Conductor</a></li>
+                    <li><a href="#">Proveedor</a></li>
+                    <li><a href="#">Aseguradora</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Acceso<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li class="dropdown-header">Sub Menú</li>
+                    <li><a href="#">Modulos</a></li>
+                    <li><a href="#">Perfil</a></li>
+                    <li><a href="#">Perfil Modulo</a></li>
+                    <li><a href="#">Perfil Empleado</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Servicio<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li class="dropdown-header">Sub Menú</li>
+                    <li><a href="#">Tipo Servicio</a></li>
+                    <li><a href="#">Servicio</a></li>
+                    <li><a href="#">Kilometraje</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tarifa<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li class="dropdown-header">Sub Menú</li>
+                    <li><a href="#">Marca</a></li>
+                    <li><a href="#">Modelo</a></li>
+                    <li><a href="#">Tarifa</a></li>
+                    <li><a href="#">Tipo Repuesto</a></li>
+                    <li><a href="#">Repuesto</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tipo Movimiento<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li class="dropdown-header">Sub Menú</li>
+                    <li><a href="#">Tipo Movimiento</a></li>
+                    <li><a href="#">Concepto Movimiento</a></li>
+                    <li><a href="#">Tipo Comprobante</a></li>
+                    <li><a href="#">Forma Pago</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Empleados<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li class="dropdown-header">Sub Menú</li>
+                    <li><a href="#">Caja</a></li>
+                    <li><a href="#">Empleado</a></li>
+                    <li><a href="#">Caja Usuario</a></li>
+                    <li><a href="#">Tipo Transaccion</a></li>
+                  </ul>
+                </li>
+            </ul>
+        </nav>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
+                <span class="hamb-top"></span>
+    			<span class="hamb-middle"></span>
+				<span class="hamb-bottom"></span>
+            </button>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                      <input type="button" value="Ver" 
+ onClick="document.getElementById('oculto').style.visibility='visible'"> 
+                        <h1><img src="./imagenes/add.png" height="30" width="30" style="margin-left: -40px"/>TIPO SERVICIO</h1>
+                        <hr>
+                        <form id="oculto" style="visibility:hidden">
+                          <table >
+                            <tr>
+                              <td>
+                                <input type="text" name="" style="margin-left: 170px" size="50" placeholder="Ingrese Codigo o Nombre del Ubigeo"><img src="./imagenes/buscar.png" height="30" width="30"  style="margin-left: 30px"/><img src="./imagenes/save.png" height="30" width="30"  style="margin-left: 30px"/>
+                              </td>
+                            </tr>
+                          </table>
+                        </form>
+                        <form style="margin-top: 30px;margin-left: 160px">
+                          <table style="border-collapse: collapse;" border="2px">
+                            <tr>
+                              <td>
+                                <p>Codigo Tipo de Servicio</p>
+                              </td>
+                              <td>
+                                <p>Nombre Servicio</p>
+                              </td>
+                              <td colspan="2">
+                                <p>Acciones</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <input type="text" name="">
+                              </td>
+                              <td>
+                                <input type="text" name="">
+                              </td>
+                              <td>
+                                <input type="image" src="imagenes/actual.png" height="35" width="25" name="">
+                              </td>
+                              <td>
+                                <input type="image" src="imagenes/cancel.png" height="30" width="30" name="">
+                              </td>
+                            </tr>
+                          </table>
+                        </form>                      
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+                    <div class="container">
+                <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+                        <h1><img src="./imagenes/add.png" height="30" width="30" 
+                        " style="margin-left: -40px"  />SERVICIO</h1>
+                        <hr>
+                        <form id="oculto" style="visibility:hidden">
+                          <table >
+                            <tr>
+                              <td>
+                                <input type="text" name="" style="margin-left: 170px" size="50" placeholder="Ingrese Codigo o Nombre Servicio"><img src="./imagenes/buscar.png" height="30" width="30" style="margin-left: 30px"/><img src="./imagenes/save.png" height="30" width="30"  style="margin-left: 30px"/>
+                              </td>
+                            </tr>
+                          </table>
+                        </form>
+                        <form style="margin-top: 30px;margin-left: 160px"; align="center">
+                          <table style="border-collapse: collapse;" border="2px">
+                            <tr>
+                              <td>
+                                <p>Codigo Servicio</p>
+                              </td>
+                              <td>
+                                <p>Codigo Tipo Servicio</p>
+                              </td>
+                              <td>
+                                <p>Nombre Servicio</p>
+                              </td>
+                              <td>
+                                <p>Tiempo Servicio</p>
+                              </td>
+                              <td>
+                                <p>Descripcion</p>
+                              </td>
+                              <td colspan="2">
+                                <p>Acciones</p>
+                              </td>
+                             </tr>
+                            <tr>
+                              <td>
+                                <input type="text" name="">
+                              </td>
+                              <td>
+                                <input type="text" name="">
+                              </td>
+                              <td>
+                                <input type="text" name="">
+                              </td>
+                              <td>
+                                <input type="text" name="">
+                              </td>
+                              <td>
+                                <input type="text" name="">
+                              </td>
+                              <td>
+                                <input type="image" src="imagenes/actual.png" height="35" width="25" name="">
+                              </td>
+                              <td>
+                                <input type="image" src="imagenes/cancel.png" height="30" width="30" name="">
+                              </td>
+                            </tr>
+                          </table>
+                        </form>                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- /#sidebar-wrapper -->
+                   <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <h1><img src="./imagenes/add.png" height="30" width="30" style="margin-left: -40px"/>KILOMETRAJE</h1>
+                        <hr>
+                        <form id="oculto" style="visibility:hidden">
+                          <table >
+                            <tr>
+                              <td>
+                                <input type="text" name="" style="margin-left: 170px" size="50" placeholder="Ingrese Codigo o Nombre del Ubigeo"><img src="./imagenes/buscar.png" height="30" width="30"  style="margin-left: 30px"/><img src="./imagenes/save.png" height="30" width="30"  style="margin-left: 30px"/>
+                              </td>
+                            </tr>
+                          </table>
+                        </form>
+                        <form style="margin-top: 30px;margin-left: 160px">
+                          <table style="border-collapse: collapse;" border="2px">
+                            <tr>
+                              <td>
+                                <p>IdKilometraje</p>
+                              </td>
+                              <td>
+                                <p>Numero kilometraje</p>
+                              </td>
+                              <td colspan="2">
+                                <p>Acciones</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <input type="text" name="">
+                              </td>
+                              <td>
+                                <input type="text" name="">
+                              </td>
+                              <td>
+                                <input type="image" src="imagenes/actual.png" height="35" width="25" name="">
+                              </td>
+                              <td>
+                                <input type="image" src="imagenes/cancel.png" height="30" width="30" name="">
+                              </td>
+                            </tr>
+                          </table>
+                        </form>                      
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!-- /#sidebar-wrapper -->
+                   <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <h1><img src="./imagenes/add.png" height="30" width="30" style="margin-left: -40px"/>MARCA</h1>
+                        <hr>
+                        <form id="oculto" style="visibility:hidden">
+                          <table >
+                            <tr>
+                              <td>
+                                <input type="text" name="" style="margin-left: 170px" size="50" placeholder="Ingrese Codigo o Nombre del Ubigeo"><img src="./imagenes/buscar.png" height="30" width="30"  style="margin-left: 30px"/><img src="./imagenes/save.png" height="30" width="30"  style="margin-left: 30px"/>
+                              </td>
+                            </tr>
+                          </table>
+                        </form>
+                        <form style="margin-top: 30px;margin-left: 160px">
+                          <table style="border-collapse: collapse;" border="2px">
+                            <tr>
+                              <td>
+                                <p>Codigo Marca</p>
+                              </td>
+                              <td>
+                                <p>Nombre Marca</p>
+                              </td>
+                              <td>
+                               <p>Descripcion Marca</p>
+                              </td>
+                              <td colspan="2">
+                                <p>Acciones</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <input type="text" name="">
+                              </td>
+                              <td>
+                                <input type="text" name="">
+                              </td>
+                              <td>
+                                <input type="text" name="">
+                              </td>
+                              <td>
+                                <input type="image" src="imagenes/actual.png" height="35" width="25" name="">
+                              </td>
+                              <td>
+                                <input type="image" src="imagenes/cancel.png" height="30" width="30" name="">
+                              </td>
+                            </tr>
+                          </table>
+                        </form>                      
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+                   <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <h1><img src="./imagenes/add.png" height="30" width="30" style="margin-left: -40px"/>MODELO</h1>
+                        <hr>
+                        <form id="oculto" style="visibility:hidden">
+                          <table >
+                            <tr>
+                              <td>
+                                <input type="text" name="" style="margin-left: 170px" size="50" placeholder="Ingrese Codigo o Nombre del Ubigeo"><img src="./imagenes/buscar.png" height="30" width="30"  style="margin-left: 30px"/><img src="./imagenes/save.png" height="30" width="30"  style="margin-left: 30px"/>
+                              </td>
+                            </tr>
+                          </table>
+                        </form>
+                        <form style="margin-top: 30px;margin-left: 160px">
+                          <table style="border-collapse: collapse;" border="2px">
+                            <tr>
+                              <td>
+                                <p>Codigo Modelo</p>
+                              </td>
+                              <td>
+                                <p>Codigo Marca</p>
+                              </td>
+                              <td>
+                               <p>Nombre Modelo</p>
+                              </td>
+                              <td>
+                               <p>Descripcion Modelo</p>
+                              </td>
+                              <td colspan="2">
+                                <p>Acciones</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <input type="text" name="">
+                              </td>
+                              <td>
+                                <input type="text" name="">
+                              </td>
+                              <td>
+                                <input type="text" name="">
+                              </td>
+                              <td>
+                                <input type="text" name="">
+                              </td>
+                              <td>
+                                <input type="image" src="imagenes/actual.png" height="35" width="25" name="">
+                              </td>
+                              <td>
+                                <input type="image" src="imagenes/cancel.png" height="30" width="30" name="">
+                              </td>
+                            </tr>
+                          </table>
+                        </form>                      
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+                   <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <h1><img src="./imagenes/add.png" height="30" width="30" style="margin-left: -40px"/>TARIFA</h1>
+                        <hr>
+                        <form id="oculto" style="visibility:hidden">
+                          <table >
+                            <tr>
+                              <td>
+                                <input type="text" name="" style="margin-left: 170px" size="50" placeholder="Ingrese Codigo o Nombre del Ubigeo"><img src="./imagenes/buscar.png" height="30" width="30"  style="margin-left: 30px"/><img src="./imagenes/save.png" height="30" width="30"  style="margin-left: 30px"/>
+                              </td>
+                            </tr>
+                          </table>
+                        </form>
+                        <form style="margin-top: 30px;margin-left: 160px">
+                          <table style="border-collapse: collapse;" border="2px">
+                            <tr>
+                              <td>
+                                <p>Codigo Tarifa</p>
+                              </td>
+                              <td>
+                                <p>Id Kilometro</p>
+                              </td>
+                              <td>
+                               <p>Codigo Servicio</p>
+                              </td>
+                              <td>
+                               <p>Codigo Modelo</p>
+                              </td>
+                              <td>
+                               <p>Codigo Modelo</p>
+                              </td>
+                              <td colspan="2">
+                                <p>Acciones</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <input type="text" name="">
+                              </td>
+                              <td>
+                                <input type="text" name="">
+                              </td>
+                              <td>
+                                <input type="text" name="">
+                              </td>
+                              <td>
+                                <input type="text" name="">
+                              </td>
+                              <td>
+                                <input type="text" name="">
+                              </td>
+                              <td>
+                                <input type="image" src="imagenes/actual.png" height="35" width="25" name="">
+                              </td>
+                              <td>
+                                <input type="image" src="imagenes/cancel.png" height="30" width="30" name="">
+                              </td>
+                            </tr>
+                          </table>
+                        </form>                      
+                    </div>
+                </div>
+            </div>
+        </div>
+       <!-- /#sidebar-wrapper -->
+                   <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <h1><img src="./imagenes/add.png" height="30" width="30" style="margin-left: -40px"/>TIPO REPUESTO</h1>
+                        <hr>
+                        <form id="oculto" style="visibility:hidden">
+                          <table >
+                            <tr>
+                              <td>
+                                <input type="text" name="" style="margin-left: 170px" size="50" placeholder="Ingrese Codigo o Nombre del Ubigeo"><img src="./imagenes/buscar.png" height="30" width="30"  style="margin-left: 30px"/><img src="./imagenes/save.png" height="30" width="30"  style="margin-left: 30px"/>
+                              </td>
+                            </tr>
+                          </table>
+                        </form>
+                        <form style="margin-top: 30px;margin-left: 160px">
+                          <table style="border-collapse: collapse;" border="2px">
+                            <tr>
+                              <td>
+                                <p>Codigo Tipo Repuesto</p>
+                              </td>
+                              <td>
+                                <p>Nombre Tipo Repuesto</p>
+                              </td>
+                              <td>
+                               <p>Descripcion</p>
+                              </td>
+                              <td colspan="2">
+                                <p>Acciones</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <input type="text" name="">
+                              </td>
+                              <td>
+                                <input type="text" name="">
+                              </td>
+                              <td>
+                                <input type="text" name="">
+                              </td>
+                              <td>
+                                <input type="image" src="imagenes/actual.png" height="35" width="25" name="">
+                              </td>
+                              <td>
+                                <input type="image" src="imagenes/cancel.png" height="30" width="30" name="">
+                              </td>
+                            </tr>
+                          </table>
+                        </form>                      
+                    </div>
+                </div>
+            </div>
+        </div>
+      <!-- /#sidebar-wrapper -->
+                  <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <h1><img src="./imagenes/add.png" height="30" width="30" style="margin-left: -40px"/>REPUESTOS</h1>
+                        <hr>
+                        <form id="oculto" style="visibility:hidden">
+                          <table >
+                            <tr>
+                              <td>
+                                <input type="text" name="" style="margin-left: 170px" size="50" placeholder="Ingrese Codigo o Nombre del Ubigeo"><img src="./imagenes/buscar.png" height="30" width="30"  style="margin-left: 30px"/><img src="./imagenes/save.png" height="30" width="30"  style="margin-left: 30px"/>
+                              </td>
+                            </tr>
+                          </table>
+                        </form>
+                        <form style="margin-top: 30px;margin-left: 160px">
+                          <table style="border-collapse: collapse;" border="2px">
+                            <tr>
+                              <td>
+                                <p>Codigo Repuesto</p>
+                              </td>
+                              <td>
+                                <p>Codigo Marca</p>
+                              </td>
+                              <td>
+                               <p>Codigo Tipo Respuesto</p>
+                              </td>
+                              <td>
+                               <p>Nombre Repuesto</p>
+                              </td>
+                              <td>
+                               <p>Cantidad Repuesto</p>
+                              </td>
+                              <td>
+                               <p>Precio Repuesto</p>
+                              </td>
+                              <td colspan="2">
+                                <p>Acciones</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <input type="text" name="">
+                              </td>
+                              <td>
+                                <input type="text" name="">
+                              </td>
+                              <td>
+                                <input type="text" name="">
+                              </td>
+                              <td>
+                                <input type="text" name="">
+                              </td>
+                              <td>
+                                <input type="text" name="">
+                              </td>
+                              <td>
+                                <input type="text" name="">
+                              </td>
+                              <td>
+                                <input type="image" src="imagenes/actual.png" height="35" width="25" name="">
+                              </td>
+                              <td>
+                                <input type="image" src="imagenes/cancel.png" height="30" width="30" name="">
+                              </td>
+                            </tr>
+                          </table>
+                        </form>                      
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+                            
+    <!-- /#wrapper -->
+</body>
+<body>
+ 
+</html>
